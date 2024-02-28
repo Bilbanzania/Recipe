@@ -791,15 +791,6 @@ footer {
         display: none;
     }
 
-    #menuNav .menu-btn:checked~.menu {
-        max-height: 240px;
-        visibility: visible;
-    }
-
-    #menuNav .menu-btn:checked~.menu-icon .navicon {
-        background: transparent;
-    }
-
     #menuNav .menu-btn:checked~.menu-icon .navicon:before {
         transform: rotate(-45deg);
     }
@@ -808,8 +799,17 @@ footer {
         transform: rotate(45deg);
     }
 
+    #menuNav .menu-btn:checked~.menu {
+        max-height: 240px;
+        visibility: visible;
+    }
+
     #menuNav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
     #menuNav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
         top: 0;
+    }
+
+    #menuNav .menu-btn:checked~.menu-icon .navicon {
+        background: transparent;
     }
 }
